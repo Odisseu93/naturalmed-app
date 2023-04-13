@@ -11,6 +11,7 @@ store.subscribe(() => console.log(store.getState()));
 store.dispatch(add({
 	productName: 'apple',
 	type: 'default',
+	category: 'food',
 	description: 'blah blah blah...',
 	price: 10.50,
 	image: 'sdgdsgsdgs',
