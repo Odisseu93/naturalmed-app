@@ -86,7 +86,7 @@ const offersSlice = createSlice({
 			};
 
 			const index = state.findIndex((item) => item.id === id);
-			if (!state.find((item) => item.id === id)) return console.error('the product was not found!, verify ');
+			if (!state.find((item) => item.id === id)) return console.error('the product was not found!');
 			else {
 				state.splice(index, 1, offer);
 				return state;
