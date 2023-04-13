@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 export interface IOffers {
+		id: string;
     productName: string;
     type: string;
 		category: string;
@@ -14,6 +15,7 @@ export interface IOffers {
 
 const initialState: IOffers[] = [
 	{
+		id: '',
 		productName: '',
 		type: '',
 		category: '',
@@ -41,8 +43,11 @@ const offersSlice = createSlice({
 				if (!isActive) return console.error('the stutus was not selected!');
 				if (!category) return console.error('the category was not selected!');
 			}
+
+			const uuid = crypto.randomUUID();
 	
 			const offer: IOffers = {
+				id: uuid,
 				productName: action.payload.productName,
 				type: action.payload.type,
 				category: action.payload.category,
@@ -53,7 +58,9 @@ const offersSlice = createSlice({
 			};
 			state.push(offer);
 		},
-		// update:{},
+		// update:{
+
+		// },
 		// delete:{},
 	}
 });
