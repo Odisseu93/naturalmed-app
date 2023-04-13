@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+import { v4 as uuidv4 } from 'uuid';
 
 export interface IOffers {
 		id: string;
@@ -44,7 +44,7 @@ const offersSlice = createSlice({
 				if (!category) return console.error('the category was not selected!');
 			}
 
-			const uuid = crypto.randomUUID();
+			const uuid = uuidv4();
 	
 			const offer: IOffers = {
 				id: uuid,
