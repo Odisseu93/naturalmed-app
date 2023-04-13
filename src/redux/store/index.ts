@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import offersSlice, { add } from './slices/offersSlice';
+import offersSlice, { add, update } from './slices/offersSlice';
 
 
 export const store = configureStore({

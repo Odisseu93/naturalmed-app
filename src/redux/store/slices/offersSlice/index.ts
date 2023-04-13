@@ -58,14 +58,46 @@ const offersSlice = createSlice({
 			};
 			state.push(offer);
 		},
-		// update:{
+		update:(state, action) => {
 
-		// },
-		// delete:{},
+			const {id, productName, type, category , description, price, image, isActive} = action.payload;
+			const attributes = [productName, type, category , description, price, image, isActive];
+	
+			if (attributes.includes(undefined) || attributes.includes('')) {
+				if (!productName) return console.error('the name has not been added!');
+				if (!description) return console.error('the description has not been added!');
+				if (!price) return console.error('the price has not been added!');
+				if (!image) return console.error('the image has not been added!');
+				if (!type) return console.error('the type was not selected!');
+				if (!isActive) return console.error('the stutus was not selected!');
+				if (!category) return console.error('the category was not selected!');
+			}
+
+			
+			const offer: IOffers = {
+				id: action.payload.id,
+				productName: action.payload.productName,
+				type: action.payload.type,
+				category: action.payload.category,
+				description: action.payload.description,
+				price: action.payload.price,
+				image: action.payload.image,
+				isActive: action.payload.isActive,
+			};
+
+			const index = state.findIndex((item) => item.id === id);
+			if (!state.find((item) => item.id === id)) return console.error('the product was not found!, verify ');
+			else {
+				state.splice(index, 1, offer);
+				return state;
+			}
+
+		},
+		// delete:()=>{},
 	}
 });
 
 
 export default offersSlice;
 
-export const { add } = offersSlice.actions;
+export const { add, update } = offersSlice.actions;
