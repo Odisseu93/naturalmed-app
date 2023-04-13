@@ -93,11 +93,19 @@ const offersSlice = createSlice({
 			}
 
 		},
-		// delete:()=>{},
+		remove: (state, action) => {
+			const { id } = action.payload;
+			if (!id) {
+				console.error('Error when trying to delete the product, the product was not found!');
+				return;
+			}
+			console.log(state.find(offer => offer.id === id) && `Product ${action.payload.id} removido`);
+			return state.filter((offer) => offer.id !== String(id));
+		},
 	}
 });
 
 
 export default offersSlice;
 
-export const { add, update } = offersSlice.actions;
+export const { add, update, remove } = offersSlice.actions;
