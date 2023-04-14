@@ -1,0 +1,39 @@
+@import '@/styles/variables';
+
+.wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: $light-pink;
+    border-radius: 11px;
+}
+
+.title {
+    font-size: 24px;
+    height: fit-content;
+    text-align: center;
+}
+
+
+.image {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 22px;
+    margin: 0.5rem 0;
+}
+
+
+.description {
+    line-height: 1.4rem;
+}
+
+.price {
+    color: $dark-Green;
+    text-align: left;
+    font-size: 32px;
+    width: fit-content;
+    margin: 0.5rem 0;
+}

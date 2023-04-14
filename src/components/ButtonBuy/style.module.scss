@@ -1,0 +1,28 @@
+@import '@/styles/variables';
+
+.btn {
+    min-width: 105px;
+    background: $primary;
+    font-size: 32px;
+    color: white;
+    &:active {
+        background: $dark-Green-active;
+    }
+}
+
+@media(min-width: 768px){
+    .btn {
+        width: fit-content;
+        &:hover{
+            opacity: 95%;
+        }
+        &:active {
+            background: $dark-Green-active;
+        }
+    }
+}
+
+.text{
+    font-size: 24px;
+}
+
