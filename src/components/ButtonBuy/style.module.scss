@@ -1,7 +1,7 @@
 @import '@/styles/variables';
 
 .btn {
-    min-width: 105px;
+    min-width: 80%;
     background: $primary;
     font-size: 32px;
     color: white;
@@ -12,7 +12,7 @@
 
 @media(min-width: 768px){
     .btn {
-        width: fit-content;
+        min-width: 105px;
         &:hover{
             opacity: 95%;
         }

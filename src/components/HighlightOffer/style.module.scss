@@ -9,6 +9,31 @@
     padding: 1rem;
     background: $light-pink;
     border-radius: 11px;
+
+}
+
+@media(min-width:768px) {
+    .wrapper {
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        min-width: 83%;
+        height: 20%;
+    }
+}
+
+.box1 {
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .box1 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 50%;
+    }
 }
 
 .title {
@@ -17,6 +42,11 @@
     text-align: center;
 }
 
+@media(min-width:768px) {
+    .title {
+        width: fit-content;
+    }
+}
 
 .image {
     width: fit-content;
@@ -25,9 +55,40 @@
     margin: 0.5rem 0;
 }
 
+@media(min-width:768px) {
+    .image {
+        max-width: 70%;
+        height: 183px;
+        border-radius: 22px;
+
+        &:hover{
+            opacity: 90%;
+        }
+    }
+}
+
+.box2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:768px) {
+    .box2 {
+        width: 40%;
+    }
+}
 
 .description {
     line-height: 1.4rem;
+}
+
+@media(min-width:768px) {
+    .description {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .price {
