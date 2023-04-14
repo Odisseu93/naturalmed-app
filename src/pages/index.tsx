@@ -7,7 +7,7 @@ import styles from '@/styles/pages/home/style.module.scss';
 import Carousel from '@/components/Carousel';
 
 export default function Home() {
-	const data = useSelector((state: any) => state);
+	const data = useSelector((state: IOffers[]) => state);
 
 	return (
 		<main className={styles.main}>
