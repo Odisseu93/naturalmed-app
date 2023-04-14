@@ -1,0 +1,130 @@
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import '@/styles/variables';
+
+
+
+.carousel {
+    display: flex;
+
+    max-width: 350px;
+    margin: 2rem auto;
+    align-self: center;
+    border: none;
+    vertical-align: middle;
+
+}
+
+.image {
+    width: 77%;
+    height: 227px;
+    margin: 1rem auto;
+}
+
+.content {
+    padding: 20px;
+    margin: auto;
+}
+
+.slick-slider {
+    margin: 2rem auto;
+    background: $dark-Green;
+}
+
+
+@media (max-width:  $mobile) {
+    .slick-dots>li {
+        display: none;
+    }
+}
+
+.slick-initialized {
+    max-width: 350px;
+    border-radius: 11px;
+
+}
+
+@media (min-width: $mobile) {
+    .slick-initialized {
+        max-width: 83vw;
+        background: $bg-carousel-desktop;
+    }
+}
+
+
+.slick-slide {
+    margin: 0 auto;
+
+    img {
+        display: block;
+        border-radius: 40px 40px 0px 0px;
+        margin: auto;
+        max-width: 80%;
+    }
+}
+
+
+.slick-active {
+    & div:nth-child(1) {
+        display: flex;
+        
+        &:hover {
+            scale: 0.99;
+            cursor: pointer;
+        }
+    }
+}
+
+.slick-track {
+
+    border: none;
+}
+
+.slick-prev {
+    &::before {
+        font-size: 0;
+
+    }
+}
+
+@media (min-width: $mobile) {
+    .slick-prev {
+        &::before {
+            font-size: 1.5rem;
+
+        }
+    }
+}
+
+.slick-next {
+    &::before {
+        font-size: 0;
+
+    }
+}
+
+@media (min-width: $mobile) {
+    .slick-next {
+        &::before {
+            font-size: 1.5rem;
+
+        }
+    }
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    text-align: center;
+    background: #FFF;
+    width: 77%;
+    margin: auto;
+    border-radius: 0px 0px 40px 40px;
+
+    & strong {
+        color: $dark-Green;
+        font-size: 2rem;
+    }
+}

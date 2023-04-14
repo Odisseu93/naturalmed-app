@@ -3,6 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 import HighlightOffer from '@/components/HighlightOffer/index';
 import { IOffers } from '@/redux/store/slices/offersSlice';
+import styles from '@/styles/pages/home/style.module.scss';
+import Carousel from '@/components/Carousel';
 
 export default function Home() {
 	const data = useSelector((state: any) => state);
@@ -31,5 +33,7 @@ export default function Home() {
     				isActive={isActive}/>) : null
     		)
     	):null
-	);
+			}
+			<Carousel/>
+		</main>);
 }
