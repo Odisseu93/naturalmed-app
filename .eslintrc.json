@@ -16,6 +16,7 @@
     "@next/next/inline-script-id": "error",
     "indent": ["error", "tab"],
     "linebreak-style": ["error", "windows"],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "no-mixed-spaces-and-tabs":"off"
   }
 }
