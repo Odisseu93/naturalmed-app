@@ -10,8 +10,9 @@ export default function Home() {
 	const data = useSelector((state: any) => state);
 
 	return (
-	 data ?
-   	 data.slice(1).map(({
+		<main className={styles.main}>
+			{ data ?
+   	 			data.slice(1).map(({
     			id,
     			productName,
     			type,
@@ -21,7 +22,7 @@ export default function Home() {
     			category,
     			isActive,
     		}: IOffers) => (
-				type === 'highlight' && isActive === true ? (<HighlightOffer
+					type === 'highlight' && isActive === true ? (<HighlightOffer
     				key={uuidv4()}
     				id={id}
     				productName={productName}
