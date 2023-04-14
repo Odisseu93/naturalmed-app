@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 
-import HighlightOffer from '@/components/HighlightOffer/index';
+import Offers from '@/components/Offers/index';
 import { IOffers } from '@/redux/store/slices/offersSlice';
 import styles from '@/styles/pages/home/style.module.scss';
 import Carousel from '@/components/Carousel';
@@ -22,7 +22,7 @@ export default function Home() {
     			category,
     			isActive,
     		}: IOffers) => (
-					type === 'highlight' && isActive === true ? (<HighlightOffer
+					type === 'highlight' && isActive === true ? (<Offers
     				key={uuidv4()}
     				id={id}
     				productName={productName}
