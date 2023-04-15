@@ -1,0 +1,11 @@
+@import './../../../styles/variables';
+
+.nav {
+    display: none;
+    position: fixed;
+    top: 95px;
+    left: 0;
+    width: 100vw;
+    height: 600px;
+    background: tomato;
+}
