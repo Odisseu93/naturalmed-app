@@ -3,6 +3,9 @@
 .btn {
     min-width: 80%;
     background: $primary;
+    border-radius: 9999px;
+    padding: 0.25rem; 
+    margin-top: 0.5rem; 
     font-size: 32px;
     color: white;
     &:active {

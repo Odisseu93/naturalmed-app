@@ -3,22 +3,24 @@
 
 
 .header {
-    display: block;
-    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    // min-width: 375px;
+    min-width: 100vw;
     background: white;
     box-sizing: border-box;
-    height: 112px;
-    padding: 0.5rem;
+    height: 95px;
+    padding-left: 1rem;
+    padding-right: 2rem;
     margin: 0;
-
+    
     &-wrapper {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
         min-width: 331px;
-        // border: 1px solid tomato;
-        // padding: 1.5rem;
     }
 
     .nav-is-closed {
@@ -45,17 +47,11 @@
 
     }
 
-
-
-    // & .btn-hambuguer{
-    //     flex-grow: 1;
-    // }
-
-    // & .image-logo{
-    //     flex-shrink: 1;
-    // }
-
-    // & .icon-remedy{
-    //     flex-grow: 0.5;
-    // }
 }
+@media(min-width: $mobile) {
+  
+    .header {
+     padding-left: 5rem;
+     padding-right: 5rem;
+    } 
+}  

@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 @import 'variables';
-@import '@/components/carousel/style.module';
+@import '../components/carousel/style.module';
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+   */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -35,8 +35,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	width: 100vw;
+	height: 100vh;
 	line-height: 1;
+	overflow-x: hidden;
+    background-size: 100vh;
+	background: $bg-body;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -53,12 +59,12 @@ table {
 	border-spacing: 0;
 };
 
-body{
-	background: linear-gradient($linear-green);
-}
+// body{
+// 	background: linear-gradient($linear-green);
+// }
 
-@media (min-width: 768px) {
-	body {
-		background: linear-gradient($linear-green-2);
-	}
-}
+// @media (min-width: 768px) {
+// 	body {
+// 		background: linear-gradient($linear-green-2);
+// 	}
+// }
