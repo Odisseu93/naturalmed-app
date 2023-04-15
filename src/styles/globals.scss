@@ -52,3 +52,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 };
+
+body{
+	background: linear-gradient($linear-green);
+}
+
+@media (min-width: 768px) {
+	body {
+		background: linear-gradient($linear-green-2);
+	}
+}

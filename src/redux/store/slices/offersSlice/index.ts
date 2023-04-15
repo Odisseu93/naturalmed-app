@@ -92,11 +92,35 @@ const initialState: IOffers[] = [
 		type: 'default',
 		category: 'Healty & Care',
 		description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
+      ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quis vel at ducimus. Quibusdam vel totam quis magni nostrum nam reprehenderit culpa quae, placeat molestias, fugiat officiis sapiente beatae aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 		price: 32.0,
 		image:
       'https://images.unsplash.com/photo-1635943051866-3271c28168f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fG5hdHVyYWwlMjByZW1lZHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-		isActive: false,
+		isActive: true,
+	},
+	{
+		id: uuidv4(),
+		productName: 'Lorem ipsum dolor sit amet.',
+		type: 'default',
+		category: 'Healty & Care',
+		description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
+		price: 45.79,
+		image:
+      'https://images.unsplash.com/photo-1635943051866-3271c28168f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fG5hdHVyYWwlMjByZW1lZHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+		isActive: true,
+	},
+	{
+		id: uuidv4(),
+		productName: 'Lorem ipsum dolor sit amet.',
+		type: 'default',
+		category: 'Healty & Care',
+		description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
+		price: 33.48,
+		image:
+      'https://images.unsplash.com/photo-1635943051866-3271c28168f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fG5hdHVyYWwlMjByZW1lZHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+		isActive: true,
 	},
 	{
 		id: uuidv4(),

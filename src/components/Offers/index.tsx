@@ -4,9 +4,9 @@ import { fonts } from '@/assets/fonts';
 import { v4 as uuidv4 } from 'uuid';
 import  ButtonBuy from '@/components/ButtonBuy/index';
 
-const Offers: React.FC<IOffers> = ({id, productName, image, description, price}: IOffers) => {
+const Offers: React.FC<IOffers> = ({id, productName, image, description, price, type}: IOffers) => {
 	return (
-		<section className={styles.wrapper} id={id}>
+		<section className={type === 'highlight' ? styles['wrapper-highlight']: ` ${styles['wrapper-default']}`} id={id}>
 			<div className={styles.box1}>
 				<h2 className={`${styles.title} ${fonts.roboto500.className}`}>{productName}</h2>
 				<img

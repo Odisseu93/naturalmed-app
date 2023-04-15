@@ -1,6 +1,6 @@
 @import '@/styles/variables';
 
-.wrapper {
+.wrapper-highlight {
     display: flex;
     flex-flow: column wrap;
     max-width: 350px;
@@ -13,7 +13,7 @@
 }
 
 @media(min-width:768px) {
-    .wrapper {
+    .wrapper-highlight {
         flex-direction: row;
         align-items: center;
         padding: 1rem;
@@ -61,7 +61,7 @@
         height: 183px;
         border-radius: 22px;
 
-        &:hover{
+        &:hover {
             opacity: 90%;
         }
     }
@@ -97,4 +97,84 @@
     font-size: 32px;
     width: fit-content;
     margin: 0.5rem 0;
+}
+
+
+
+.default-offers-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 350px;
+    margin: 5rem auto;
+    padding: 1rem;
+    gap: 3rem;
+    border-radius: 1rem;
+}
+
+@media (min-width:768px) {
+    .default-offers-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: baseline;
+        max-width: 83vw;
+        padding: 1rem;
+        gap: 5rem;
+    }
+}
+
+
+.wrapper-default {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 90%;
+    height: fit-content;
+    background: $light-pink;
+    border-radius: 1rem;
+
+    & img {
+        margin-top: 1rem;
+        width: 100%;
+        height: fit-content;
+    }
+
+    & .box1 {
+        line-height: 1rem;
+    }
+
+    & .box2 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media (min-width:768px) {
+    .wrapper-default {
+        flex-flow: row wrap;
+        padding: 1rem;
+        align-items: first baseline;
+        width: 45%;
+        height: fit-content;
+        background: $light-pink;
+        border-radius: 1rem;
+
+        & img {
+            min-width: 100px;
+            min-height: 100px;
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        & .box1 {}
+
+        & .box2 {
+            margin-left: 1rem;
+            display: flex;
+            flex-flow: row wrap;
+        }
+    }
 }
