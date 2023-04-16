@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import styles from './style.module.scss';
+import Nav from './Nav';
+import { v4 as uuidv4 } from 'uuid';
 
 const Header:React.FC = () => {
 	const [showNave, setShowNave]= useState(false); 
@@ -13,7 +15,8 @@ const Header:React.FC = () => {
 				</button>
 				<img src="/assets/logo-mobile.svg" className={styles['image-logo']} alt="logo" />        
 				<img src="/assets/icon-remedy.svg" className={styles['icon-remedy']} alt="logo" />
-			</div>         
+			</div>
+			<Nav key={uuidv4()} showNave={showNave} setShowNave={setShowNave} />      
 		</header>
 	);
 };
