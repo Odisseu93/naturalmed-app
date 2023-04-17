@@ -16,7 +16,7 @@ const Offers: React.FC<IOffers> = ({id, productName, image, description, price, 
 				/>
 			</div>
 			<div className={styles.box2}>
-				<strong className={`${styles.price}  ${fonts.roboto700.className}`}>{`$${price.toFixed(2)}`}</strong>
+				<strong className={`${styles.price}  ${fonts.roboto700.className}`}>$ {price}</strong>
 				<p className={`${styles.description} ${fonts.roboto400.className}`}>{description}</p>
 				<ButtonBuy key={String(uuidv4())} text='Buy' />
 			</div>
