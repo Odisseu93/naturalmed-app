@@ -23,31 +23,40 @@ const Nav: React.FC<INav> = ({showNave}:INav) => {
 			: setCategories(null);
 	}, [data]);
 
-	const handleClick = (event: any) => event.preventDefault();
+	const preventDefault = (event: any) => event.preventDefault();
 	
 	return (
 		<nav className={`${showNave === false ? styles['is-hide'] : styles.nav}`}>
 			<h2 className={`${styles['nav-heading']} ${fonts.roboto700.className}`}>
-        	Categories
+        pages
+			</h2>
+			<ul className={styles['nav-ul']}>
+				<li
+					key={uuidv4()}
+					className={`${styles['nav-li']} ${fonts.roboto500.className}`}
+				>
+					<Link href="/inventory" className={styles['nav-link-inventory']}>
+            Inventory
+					</Link>
+				</li>
+			</ul>
+			<h2 className={`${styles['nav-heading']} ${fonts.roboto700.className}`}>
+        Categories
 			</h2>
 			<ul className={styles['nav-ul']}>
 				{categories
 					? categories.slice(1).map((category) => (
-						<li
-							key={uuidv4()}
-							className={styles.li}
-						>
-							<Link href=""  className={styles['nav-link']} onClick={handleClick}>
+						<li key={uuidv4()} className={styles.li}>
+							<Link
+								href=""
+								className={styles['nav-link']}
+								onClick={preventDefault}
+							>
 								{category}
 							</Link>
 						</li>
 					))
 					: null}
-				<li key={uuidv4()} className={`${styles['nav-li']} ${fonts.roboto500.className}`} >
-					<Link href="" className={styles['nav-link-inventory']} onClick={handleClick}>
-           			 Inventory
-					</Link>
-				</li>
 			</ul>
 		</nav>
 	);
