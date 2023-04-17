@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import offersSlice, { add, update, remove } from './slices/offersSlice';
+import offersSlice from './slices/offersSlice';
+import { setDataLocalStorage } from '@/storage/localStorage';
 
 
 export const store = configureStore({
 	reducer: offersSlice.reducer,
 });
+
+store.subscribe(() => setDataLocalStorage('data', store.getState()));
