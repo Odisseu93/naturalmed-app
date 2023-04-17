@@ -14,13 +14,15 @@ export interface IOffers {
 }
 
 
-const initialState: IOffers[] = getDataLocalStorage('data')
-	? getDataLocalStorage('data') :[
+const initialState: IOffers[] =
+//  getDataLocalStorage('data')
+// 	? getDataLocalStorage('data') :
+	[
 		{
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'carousel',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 9.5,
@@ -32,7 +34,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'carousel',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 18.9,
@@ -44,7 +46,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'carousel',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 25.0,
@@ -56,7 +58,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'carousel',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 10.0,
@@ -68,7 +70,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'default',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 5.0,
@@ -80,7 +82,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'carousel',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 8.0,
@@ -92,7 +94,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'default',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 32.0,
@@ -104,7 +106,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'default',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 45.79,
@@ -116,7 +118,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'default',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 33.48,
@@ -128,7 +130,7 @@ const initialState: IOffers[] = getDataLocalStorage('data')
 			id: uuidv4(),
 			productName: 'Lorem ipsum dolor sit amet.',
 			type: 'carousel',
-			category: 'Healty & Care',
+			category: 'Healty',
 			description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non quasi provident. Fugit ratione nostrum praesentium, doloremque qui nobis illo!',
 			price: 32.0,
