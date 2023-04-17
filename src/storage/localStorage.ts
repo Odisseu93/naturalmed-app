@@ -8,5 +8,8 @@ function setDataLocalStorage<T>(key: string, data: T) {
 const getDataLocalStorage = (key: string) => {
 	if (typeof window !== 'undefined' && localStorage[key] !== undefined) return JSON.parse(localStorage[key]);
 };
+
+
+const localStorageClear = ()=> localStorage.clear();
   
-export { setDataLocalStorage, getDataLocalStorage };
+export { setDataLocalStorage, getDataLocalStorage, localStorageClear };
