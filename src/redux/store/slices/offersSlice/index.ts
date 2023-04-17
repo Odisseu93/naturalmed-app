@@ -145,6 +145,18 @@ const initialState: IOffers[] =
 				'https://images.unsplash.com/photo-1633171031508-a8f26271e8aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
 			isActive: true,
 		},
+		{
+			id: uuidv4(),
+			productName: 'Omega 3',
+			type: 'carousel',
+			category: 'Food',
+			description:
+				'super suplement for your health and well-being natural and 100% functional, take advantage og this offer',
+			price: 10.5,
+			image:
+				'https://images.unsplash.com/photo-1633171031508-a8f26271e8aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+			isActive: true,
+		},
 	];
 
 const offersSlice = createSlice({
