@@ -193,6 +193,6 @@ Start the server / inicie o servidor
 
 
 ## License / _Licença_
-[MIT](/LICENSE.MD)
+[MIT](LICENSE.md)
 
 
