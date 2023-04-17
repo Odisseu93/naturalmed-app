@@ -183,13 +183,13 @@ const Inventory: React.FC = () => {
 					<label className={`${styles.label} ${fonts.roboto500.className}`} htmlFor="category">category</label >
 					<select ref={categoryRef} name="" id="category" required>
 						<option value=""></option>
-						<option value="Healty">Healty & Care</option>
-						<option value="food">Food</option>
-						<option value="pet">Pet</option>
-						<option value="hardware">Hardware</option>
-						<option value="flowers">Flowers</option>
-						<option value="garden">Garden&apos;s</option>
-						<option value="garden">Beauty & Hair</option>
+						<option value="Healty & Care">Healty & Care</option>
+						<option value="Food">Food</option>
+						<option value="Pet">Pet</option>
+						<option value="Hardware">Hardware</option>
+						<option value="Flowers">Flowers</option>
+						<option value="Garden's">Garden&apos;s</option>
+						<option value="Beauty & Hair">Beauty & Hair</option>
 					</select>
 				</div>
 				<div className={styles['form-group']}>
