@@ -5,7 +5,7 @@ import styles from './style.module.scss';
 import { fonts } from '@/assets/fonts';
 import { useSelector } from 'react-redux';
 import { IOffers } from '@/redux/store/slices/offersSlice';
-
+import { FORMATTER_USD } from '@/utils/formatter';
 
 
 export default function Carousel() {
@@ -80,7 +80,7 @@ export default function Carousel() {
         		<section className={styles.carousel} id={id} key={uuidv4()}>
         			<img src={image} className={styles.image} alt="product image" />
         			<p className={styles.price}>
-        				<strong className={fonts.roboto700.className}>$ {price.toFixed(2)}</strong>
+        				<strong className={fonts.roboto700.className}>{FORMATTER_USD.format(price)}</strong>
         			</p>
         		</section>
         	) : null

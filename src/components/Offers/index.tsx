@@ -3,6 +3,7 @@ import styles from './style.module.scss';
 import { fonts } from '@/assets/fonts';
 import { v4 as uuidv4 } from 'uuid';
 import  ButtonBuy from '@/components/ButtonBuy/index';
+import { FORMATTER_USD } from '@/utils/formatter';
 
 const Offers: React.FC<IOffers> = ({id, productName, image, description, price, type}: IOffers) => {
 	return (
@@ -16,7 +17,7 @@ const Offers: React.FC<IOffers> = ({id, productName, image, description, price, 
 				/>
 			</div>
 			<div className={styles.box2}>
-				<strong className={`${styles.price}  ${fonts.roboto700.className}`}>$ {price}</strong>
+				<strong className={`${styles.price}  ${fonts.roboto700.className}`}>{FORMATTER_USD.format(price)}</strong>
 				<p className={`${styles.description} ${fonts.roboto400.className}`}>{description}</p>
 				<ButtonBuy key={String(uuidv4())} text='Buy' />
 			</div>

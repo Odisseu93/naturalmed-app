@@ -1,4 +1,4 @@
-import { getDataLocalStorage } from '@/storage/localStorage';
+import { getDataLocalStorage } from '@/utils/storage/localStorage';
 import { createSlice } from '@reduxjs/toolkit';
 import { v4 as uuidv4 } from 'uuid';
 

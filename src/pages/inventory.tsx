@@ -5,7 +5,7 @@ import styles from '@/styles/pages/inventory/style.module.scss';
 import { useState, useRef, FormEvent, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { getDataLocalStorage, localStorageClear, setDataLocalStorage } from '@/storage/localStorage';
+import { getDataLocalStorage, localStorageClear, setDataLocalStorage } from '@/utils/storage/localStorage';
 
 const Inventory: React.FC = () => {
 	const [showModal, setShowModal] = useState(false);
